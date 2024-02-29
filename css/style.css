@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@400;700&display=swap');
+
+.container {
+    margin: auto;
+    max-width: 1600px;
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+body {
+    background-color: #252525;
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+a {
+    text-decoration: none;
+}
+
+/********************/
+header {
+    padding-top: 15px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Caveat'
+}
+
+.logo:hover {
+    text-shadow: rgba(255, 183, 0) 1px 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 19px;
+}
+
+nav ul a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+}
+
+nav ul .phone a {
+    font-size: 24px;
+}
+
+.header-row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/******main********/
+
+main {
+    min-height: calc(100vh - 280px);
+    padding: 0 20px;
+}
+
+form {
+    width: 500px;
+    margin: auto
+}
+
+form input {
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid #FEA701;
+    margin-bottom: 24px;
+    background: transparent;
+    padding: 12px 31px;
+    color: #fff
+}
+
+form input::placeholder {
+    color: #fff
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+}
+
+.container-main img {
+    display: flex;
+    position: relative;
+    left: 7%;
+}
+
+#products {
+    flex-wrap: wrap;
+}
+
+.product img {
+    padding: 15px 0px;
+    left: 0%;
+}
+
+h1 {
+    display: flex;
+    position: relative;
+    right: 7%;
+    flex-direction: column-reverse;
+    font-size: 80px;
+    text-shadow: #FC0 1px 0 10px;
+    font-family: 'Caveat';
+    white-space: nowrap;
+}
+h3 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: rgb(255, 166, 0) 1px 0 10px;
+    font-family: 'Caveat';
+    white-space: nowrap;
+}
+
+
+/*******footer*****/
+footer {
+    padding-bottom: 50px;
+    font-style: italic;
+}
+
+.footer-row {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.social-list {
+    display: flex;
+}
+
+footer .phone {
+    display: none;
+}
+
+/****счетчик******/
+#countdown {
+    display: flex;
+    background-color: #252525;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.countdown-item {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80px;
+    height: 60px;
+    border: 1px solid #FEA701;
+    text-align: center;
+}
+
+.text-value {
+    background-color: rgb(110, 51, 3);
+    font-size: 14px;
+}
+
+.count-value {
+    margin-top: 7px;
+    min-width: 50px;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(238, 132, 83);
+}
+
+
+/***еда***/
+.product {
+    padding: 10px;
+    height: 250px;
+    width: 178px;
+    border-radius: 25px;
+    border: 2px solid #FEA701;
+    font-style: italic;
+    font-size: 8pt;
+    margin: 0.5em;
+    display: inline-table;
+    text-align: center;
+}
+
+
+.product:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 3px 5px 3px 2px rgba(255, 180, 18, 0.2);
+}
+
+#cart {
+    max-width: 60%;
+}
+
+#total {
+    padding-bottom: 20px;
+}
+
+#cart-items span {
+    min-width: 300px;
+    display: inline-block;
+}
+
+#cart-items li {
+    margin-bottom: 5px;
+}
+
+.goto {
+    color: #fff;
+    text-align: center;
+}
+
+.goto:hover {
+    text-shadow: rgb(255, 183, 0) 1px 1px 2px;
+}
+
+#clearP {
+    margin-top: 20px;
+}
+
+#total {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/***портфолио****/
+
+
+
+
+/* ajax */
+
+.ajax {
+    margin: auto;
+    max-width: 900px;
+}
+
+#all-users {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#all-users span {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#result {
+    margin-bottom: 100px;
+}
+
+#result table {
+    display: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+table td:first-child {
+    width: 30%;
+}
+
+.show-btn {
+    cursor: pointer;
+}
+
+.show-btn:hover {
+    color: purple;
+}
+
+#posts {
+    margin-bottom: 50px;
+}
+
+/* игрушка */
+
+.game {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    
+}
+
+.bullet {
+    position: absolute;
+    left: 150px;
+    width: 17%;
+}
+
+.fire {
+    position: none;
+    top: 70px;
+    left: 72%;
+    width: 13%;
+    z-index: 0;
+    transition: 50ms;
+}
+
+/***мобильная адаптация****/
+@media(max-width: 768px) {
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .burger__line {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        padding: 5%;
+        z-index: 2;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    main {
+        min-height: calc(90vh - 300px);
+    }
+
+    .header-row li.phone {
+        display: none;
+    }
+
+    footer {
+        padding-bottom: 0%;
+    }
+
+    footer .phone {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .phone a {
+        color: #fff;
+        font-size: 32px;
+        padding-top: 15px;
+    }
+
+    .burger.active .burger__line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.active .burger__line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .burger__line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .container-main img {
+        margin-top: 80px;
+        left: 0%;
+    }
+
+    .container-main {
+        display: block;
+        text-align: center;
+    }
+
+    main h1 {
+        display: block;
+        font-size: 55px;
+        right: 0%;
+    }
+
+    nav ul {
+        display: table-column;
+        position: absolute;
+        background-color: #333;
+        top: 0;
+        right: 0;
+        width: 40%;
+        padding: 5px;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 1;
+    }
+
+    nav ul.active {
+
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        padding: 23px;
+        margin: 1px;
+        font-size: 22px;
+        font-family: "Lato";
+    }
+
+    nav ul li:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: rgb(255, 183, 0) 1px 1px 2px;
+    }
+
+
+    #regForm {
+        width: 100%;
+    }
+
+    #cart {
+        max-width: 95%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+    #cart {
+        max-width: 35%;
+    }
+
+    .container-main img {
+        
+        position: relative;
+        max-height: 400px;
+        left:8%;
+        
+    }
+    
+    
+
+}
+
+@media(max-width: 540px) {
+
+    #all-users span {
+        font-size: 14px;
+    }
+
+}
